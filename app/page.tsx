@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -145,8 +146,15 @@ export default function HomePage() {
           </nav>
 
           <div className="nav-actions">
-            <a className="btn btn-login" href="#">Log in</a>
-            <a className="btn btn-signin" href="#">Sign in</a>
+            <Link className="btn btn-login" href="/login">
+              Log in
+            </Link>
+            <Link className="btn btn-signin" href="/signup">
+              Sign in
+            </Link>
+            {/* <Link className="hero-primary" href="/signup">
+              Request pilot access
+            </Link> */}
           </div>
         </div>
       </header>
