@@ -141,7 +141,7 @@ export default function HomePage() {
 
           <nav className="nav-links" aria-label="Primary">
             <a href="#platform">Platform</a>
-            <a href="#intelligence">Intelligence</a>
+            <a href="#img">Intelligence</a>
             <a href="#pricing">Pilot pricing</a>
           </nav>
 
@@ -281,6 +281,24 @@ export default function HomePage() {
                 </div>
               </div>
             </aside>
+          </div>
+        </section>
+
+        <section className="container showcase-section" id="img">
+          <div className="showcase-card">
+            <Image
+              src="/home-phot.jpg"
+              alt="Leucistic predictive maintenance showcase"
+              width={1600}
+              height={900}
+              className="showcase-img"
+            />
+
+            <div className="showcase-content">
+              <Link className="hero-primary" href="/signup">
+                Request pilot access
+              </Link>
+            </div>
           </div>
         </section>
 
