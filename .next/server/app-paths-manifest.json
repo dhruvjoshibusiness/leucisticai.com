@@ -1,11 +1,6 @@
 {
-  "/contract/page": "app/contract/page.js",
-  "/access-pending/page": "app/access-pending/page.js",
-  "/page": "app/page.js",
-  "/about/page": "app/about/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/forgot-password/page": "app/forgot-password/page.js",
-  "/reset-password/page": "app/reset-password/page.js",
-  "/login/page": "app/login/page.js",
-  "/signup/page": "app/signup/page.js"
+  "/page": "app/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/client-reports/page": "app/client-reports/page.js"
 }

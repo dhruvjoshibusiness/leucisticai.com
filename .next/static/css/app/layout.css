@@ -1383,3 +1383,260 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.premium-card--contact {
+  display: block;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.contact-intro,
+.contact-form-panel {
+  min-height: 100%;
+}
+
+.contact-intro {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  align-content: start;
+  padding: 0.25rem 0;
+}
+
+.contact-highlights {
+  display: grid;
+  grid-gap: 0.9rem;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.contact-form-panel {
+  display: flex;
+}
+
+.contact-form-card {
+  width: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.contact-form-card h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.15rem;
+}
+
+.contact-form {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  grid-gap: 0.45rem;
+  gap: 0.45rem;
+}
+
+.field span {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  padding: 0.95rem 1rem;
+  outline: none;
+  font: inherit;
+}
+
+.field textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--text-faint);
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: rgba(140, 166, 255, 0.4);
+  box-shadow: 0 0 0 3px rgba(140, 166, 255, 0.12);
+}
+
+@media (max-width: 960px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-panel {
+    order: 2;
+  }
+
+  .contact-intro {
+    order: 1;
+  }
+}
+
+.dashboard-subnote {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+button.secondary-link {
+  cursor: pointer;
+  font: inherit;
+}
+
+.download-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 48px;
+  padding: 0 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  transition: 0.2s ease;
+}
+
+.download-button:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-1px);
+}
+
+.download-caret {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+.download-menu {
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  right: 0;
+  min-width: 230px;
+  padding: 0.55rem;
+  border-radius: 1rem;
+  background: rgba(12, 15, 22, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-gap: 0.35rem;
+  gap: 0.35rem;
+  z-index: 20;
+}
+
+.download-menu button {
+  width: 100%;
+  border: 0;
+  border-radius: 0.85rem;
+  background: transparent;
+  color: var(--text);
+  padding: 0.85rem 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.download-menu button strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.download-menu button span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.12rem;
+}
+
+.download-menu button:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.download-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.analytics-bars {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.analytics-bar-item {
+  display: grid;
+  grid-gap: 0.45rem;
+  gap: 0.45rem;
+}
+
+.analytics-bar-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.analytics-bar-track {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.analytics-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #8c7bff, #4f8cff);
+}
+
+.insight-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--text);
+  display: grid;
+  grid-gap: 0.7rem;
+  gap: 0.7rem;
+}
+
+.dashboard-subnote {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.dashboard-actions--grouped {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
